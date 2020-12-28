@@ -1,44 +1,44 @@
-## TELEMETRY DATA APP
+# TELEMETRY DATA APP
 <p align="center">
   <img width="800" src="./nasa-telemetry-app.png" alt="App-demo"/>
 </p>
-The app is divided in two options: historical or reatime data.
+The app is divided in two sections: historical or reatime data, with data displayed in the data table based on the selections in the above two sections.
 
-# Historical data section:
- is used for querying on the historical endpoint for last 15 minutes of telemetry data option selected by the user, either pwr.c or pwr.v.
+## Historical data section:
+ - This left section is used for querying on the historical endpoint for last 15 minutes of telemetry data option selected by the user, either pwr.c or pwr.v.
 
-User can also sort the historical data subscription in ascending or desending order.
+- User can also sort the historical data subscription in ascending or desending order.
 
 
-# Realtime data section:
- is used subsribing to the realtime data enpoint based on selected telemetry data.
+## Realtime data section:
+ - This right section is used subsribing to the realtime data enpoint based on selected telemetry data.
 
- User can open a webSocket to initiate the websocket connection primarily by clicking on "Open WebSocket".
+ - User can open a webSocket to initiate the websocket connection primarily by clicking on "Open WebSocket".
 
- By default, both pwr.c and pwr.v are subscribed to upon opening the web socket. User will be able to see the data upon clicking on "Load Data" once or multiple times.
+ - By default, both pwr.c and pwr.v are subscribed to upon opening the web socket. User will be able to see the data upon clicking on "Load Data" once or multiple times.
 
- User can choose to subscribe the telemetry point of their choice, either pwr.c or pwrc.v or both pwr.c + pwr.v, by clicinkg on the corresponding Telemetry Point Filter button.
+ - User can choose to subscribe the telemetry point of their choice, either pwr.c or pwrc.v or both pwr.c + pwr.v, by clicinkg on the corresponding Telemetry Point Filter button.
 
- User can also sort the realtime data subscription in ascending or desending order.
+ - User can also sort the realtime data subscription in ascending or desending order.
  After selecting the soring order, if the user clicks on "Load Data" again to load new subscriptions, the new data will remain displayed in last selected sorting order.
 
- User can close the websocket by clicking on "Close WebSocket" button after using the application.
+ - User can close the websocket by clicking on "Close WebSocket" button after using the application.
 
-# History or Realtime Data Table:
+## History or Realtime Data Table:
  Data table towards the bottom of the application displays either the historical data or the realtime data upon user selection in the given section of their choice.
 
 
 # RUNNING APP
+
+## OPEN INDEX.HTML in LOCAL HTTP-SERVER
+- Upload the index.html file to local http server for hosting your web application.
+- Open the index.html file on localhost.
 
 ## RUNNING SERVER
 - git clone https://github.com/nasa/openmct-tutorial.git
 - cd openmct-tutorial
 - npm install
 - npm start
-
-## OPEN INDEX.HTML in LOCAL HTTP-SERVER
-- Upload the index.html file to local http server for hosting your web application.
-- Open the index.html file on localhost.
 
 ## CORS 
 
