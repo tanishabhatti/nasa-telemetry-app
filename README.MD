@@ -4,7 +4,7 @@
 </p>
 The app is divided in two sections: historical or reatime data, with data displayed in the data table based on the selections in the above two sections.
 
-## Historical data section (http request):
+## Historical data section (http requests):
  - This left section is used for querying on the historical endpoint for last 15 minutes of telemetry data option selected by the user, either pwr.c or pwr.v.
 
 - User can also sort the historical data subscription in ascending or desending order.
