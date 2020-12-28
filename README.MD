@@ -4,13 +4,13 @@
 </p>
 The app is divided in two sections: historical or reatime data, with data displayed in the data table based on the selections in the above two sections.
 
-## Historical data section:
+## Historical data section (http request):
  - This left section is used for querying on the historical endpoint for last 15 minutes of telemetry data option selected by the user, either pwr.c or pwr.v.
 
 - User can also sort the historical data subscription in ascending or desending order.
 
 
-## Realtime data section:
+## Realtime data section (websockets):
  - This right section is used subsribing to the realtime data enpoint based on selected telemetry data.
 
  - User can open a webSocket to initiate the websocket connection primarily by clicking on "Open WebSocket".
