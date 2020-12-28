@@ -4,13 +4,13 @@
 </p>
 The app is divided in two options: historical or reatime data.
 
-- Historical data section:
+# Historical data section:
  is used for querying on the historical endpoint for last 15 minutes of telemetry data option selected by the user, either pwr.c or pwr.v.
 
 User can also sort the historical data subscription in ascending or desending order.
 
 
-- Realtime data section:
+# Realtime data section:
  is used subsribing to the realtime data enpoint based on selected telemetry data.
 
  User can open a webSocket to initiate the websocket connection primarily by clicking on "Open WebSocket".
@@ -24,23 +24,23 @@ User can also sort the historical data subscription in ascending or desending or
 
  User can close the websocket by clicking on "Close WebSocket" button after using the application.
 
- - History or Realtime Data Table:
+# History or Realtime Data Table:
  Data table towards the bottom of the application displays either the historical data or the realtime data upon user selection in the given section of their choice.
 
 
-## RUNNING APP
+# RUNNING APP
 
-# RUNNING SERVER
-git clone ​https://github.com/nasa/openmct-tutorial.git
-cd openmct-tutorial
-npm install
-npm start
+## RUNNING SERVER
+- git clone https://github.com/nasa/openmct-tutorial.git
+- cd openmct-tutorial
+- npm install
+- npm start
 
-# OPEN INDEX.HTML in LOCAL HTTP-SERVER
-Upload the index.html file to local http server for hosting your web application.
-Open the index.html file on localhost.
+## OPEN INDEX.HTML in LOCAL HTTP-SERVER
+- Upload the index.html file to local http server for hosting your web application.
+- Open the index.html file on localhost.
 
-# CORS 
+## CORS 
 
 app.use(function(req, res, next) { 
     res.header("Access-Control-Allow-Origin", "http://localhost:8081"); 
@@ -51,13 +51,13 @@ app.use(function(req, res, next) {
 where "http://localhost:8081" is replaced with the details of the http server
 hosting your web application.
 
-## SERVER
+# SERVER
 
-# ENDPOINTS
+## ENDPOINTS
   ●   http://localhost:8080/history​  -An httpserver for “historical” dataqueries.
   ●    ws://localhost:8080/realtime​   -A websocket endpoint for subscribing to realtime data.
 
-# QUERY PARAMS
+## QUERY PARAMS
 
 http://localhost:8080/history/:pointId?start=:start&end=:end
 
@@ -65,7 +65,7 @@ http://localhost:8080/history/pwr.v?start=1561846955890&end=1561848320152
 
 [{"timestamp":1561848196179,"value":241.70507498990156,"id":"pwr.v"}, {"timestamp":1561848197181,"value":238.10697171005611,"id":"pwr.v"},{ "timestamp":1561848198182,"value":233.80084678058353,"id":"pwr.v"}]
 
-# WEBSOCKET
+## WEBSOCKET
 
 ws://localhost:8080/realtime
 
