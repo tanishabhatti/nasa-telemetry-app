@@ -1,6 +1,6 @@
 ## TELEMETRY DATA APP
 <p align="center">
-  <img width="600" src="./nasa-telemetry-app.png" alt="App-demo"/>
+  <img width="800" src="./nasa-telemetry-app.png" alt="App-demo"/>
 </p>
 The app is divided in two options: historical or reatime data.
 
