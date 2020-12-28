@@ -54,27 +54,27 @@ hosting your web application.
 # SERVER
 
 ## ENDPOINTS
-  ●   http://localhost:8080/history​  -An httpserver for “historical” dataqueries.
-  ●    ws://localhost:8080/realtime​   -A websocket endpoint for subscribing to realtime data.
+-  http://localhost:8080/history​  -An httpserver for “historical” dataqueries.
+-  ws://localhost:8080/realtime​   -A websocket endpoint for subscribing to realtime data.
 
 ## QUERY PARAMS
 
-http://localhost:8080/history/:pointId?start=:start&end=:end
+- http://localhost:8080/history/:pointId?start=:start&end=:end
 
-http://localhost:8080/history/pwr.v?start=1561846955890&end=1561848320152
+- http://localhost:8080/history/pwr.v?start=1561846955890&end=1561848320152
 
-[{"timestamp":1561848196179,"value":241.70507498990156,"id":"pwr.v"}, {"timestamp":1561848197181,"value":238.10697171005611,"id":"pwr.v"},{ "timestamp":1561848198182,"value":233.80084678058353,"id":"pwr.v"}]
+- [{"timestamp":1561848196179,"value":241.70507498990156,"id":"pwr.v"}, {"timestamp":1561848197181,"value":238.10697171005611,"id":"pwr.v"},{ "timestamp":1561848198182,"value":233.80084678058353,"id":"pwr.v"}]
 
 ## WEBSOCKET
 
-ws://localhost:8080/realtime
+- ws://localhost:8080/realtime
 
-subscribe :pointId
+- subscribe :pointId
 subscribe pwr.v
 
-unsubscribe :pointId
+- unsubscribe :pointId
 unsubscribe pwr.v
 
-{"timestamp":1561848196179,"value":241.70507498990156,"id":"pwr.v"}
+- {"timestamp":1561848196179,"value":241.70507498990156,"id":"pwr.v"}
 
 # COPYRIGHT @ TANISHA BHATTI, 2020
