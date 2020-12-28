@@ -6,8 +6,8 @@ The app is divided in two sections: historical or reatime data, with data displa
 
 ## Historical data section (http requests):
  - This left section is used for querying on the historical endpoint for last 15 minutes of telemetry data option selected by the user, either pwr.c or pwr.v.
-
-- User can also sort the historical data subscription in ascending or desending order.
+ - User can select the last 15 minutes of telemetry data by double clicking on the "Last 15 minutes query (pwr.c)" button or "Last 15 minutes query (pwr.v)" button
+ - User can also sort the historical data subscription in ascending or desending order.
 
 
 ## Realtime data section (websockets):
